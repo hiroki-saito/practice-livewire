@@ -1,0 +1,12 @@
+; Cloud Run enforces memory & timeouts
+memory_limit = -1
+max_execution_time = 0
+; File upload at Cloud Run network limit
+upload_max_filesize = 32M
+post_max_size = 32M
+; Configure Opcache for Containers
+opcache.enable = On
+opcache.validate_timestamps = On
+opcache.revalidate_freq = 0
+; Configure Opcache Memory (Application-specific)
+opcache.memory_consumption = 32
