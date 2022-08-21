@@ -6,6 +6,7 @@
     @vite(['resources/css/app.scss'])
     @section('contents-meta')
     @show
+    @livewireStyles
 </head>
 <body>
 @include('elements.header')
@@ -16,5 +17,6 @@
 @section('bottom')
     @vite(['resources/js/app.js'])
 @show
+@livewireScripts
 </body>
 </html>
