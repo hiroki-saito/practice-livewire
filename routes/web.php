@@ -1,14 +1,7 @@
 <?php
 
+use App\Http\Controllers\Home;
 use App\Http\Controllers\Ping;
-use App\Http\Controllers\Random\Generate;
-use App\Http\Controllers\SetLanguage;
-use App\Http\Controllers\ShowRandom;
-use App\Http\Controllers\ShowUrl;
-use App\Http\Controllers\String\LengthCalculator;
-use App\Http\Controllers\String\ShowLengthCalculator;
-use App\Http\Controllers\Url\Decoder;
-use App\Http\Controllers\Url\Encoder;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', Home::class);
 Route::get('/ping', Ping::class);
